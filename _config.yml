@@ -21,9 +21,14 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/decaluwe/EchemSystemsEngingeering.git  # Online location of your book
+  # path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: main  # Which branch of the repository should be used when creating links (optional)
+
+# Use thebe to launch interactive code blocks
+launch_buttons:
+  thebe                  : true
+  binderhub_url: https://mybinder.org/v2/gh/decaluwe/EchemSystemsEngingeering.git/main  # The URL for your BinderHub (e.g., https://mybinder.org)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository

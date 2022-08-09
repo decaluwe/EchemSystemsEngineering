@@ -3,19 +3,19 @@
 ## Goals and Scope
 
 Welcome! The purpose of this book is to give a general overview of electrochemical systems and how to model them. In this book, we will cover:
-- *Basics of electrochemistry*: electrochemical thermodynamics, kinetics, and transport,
-- *Features of an electrochemical system*: electrodes, electrolytes, and balance-of-plant,
-- *Electrochemical system operation*: use cases, operating modes,  how to evaluate performance, and
-- *Electrochemical Modeling*: Building and using software tools to model electrochemical systems.
+- **Basics of electrochemistry**: electrochemical thermodynamics, kinetics, and transport,
+- **Features of electrochemical systems**: electrodes, electrolytes, and balance-of-plant,
+- **Electrochemical system operation**: use cases, operating modes,  how to evaluate performance, and
+- **Electrochemical Modeling**: Building and using software tools to model electrochemical systems.
 
 ## What is Electrochemistry, and Why do We Care?
 
 Electrochemistry can be thought of as a subset of chemistry, where chemical reactions are accompanied by the movement of charge between reactants and products. If the charge moves from one phase to another phase, the total electric potential energy of the system changes, during the course of the reaction. This has three practical implications of interest to us:
 1. The potential energy of the various phases involved will influence the reaction rate, and can be varied to drive the reaction in one direction or another, 
-2. The movement of charge results in an electrical current, which can be measured and therefore providees a measure of the reaction rate, and
+2. The movement of charge results in an electrical current, which can be measured and therefore provides a measure of the reaction rate, and
 2. The reaction can be used to either store or release electrical energy.
 
-These three aspects of electrochemical reactions have led to the ubiquitous use of electrochemistry and electrochemical systems throughout society, for energy storage, conversion, and production, chemical processing, and sensors, among others. In recent years, advances in electrochemical systems (such as batteries) has led to a revolution in portable power for consumer device and an explosion of electric mobility options. Moreover, the ability to couple efficient electrochemical storage solutions with intermittent renewable power sources (e.g. solar and wind) will have a significant impact on our attempts to decarbonize our energy supply chain to mitigate human impacts on the climate and the Earth's biodiversity. Beyond energy storage and conversion, electrochemical systems play an important role in a range of industrial chemical applications, as discussed in [Chapter 1](chapters/ch1-intro/ch1-content.md). 
+These three aspects of electrochemical reactions have led to the ubiquitous use of electrochemistry and electrochemical systems throughout society, for energy storage, conversion, and production, chemical processing, and sensors, among others. In recent years, advances in electrochemical systems (such as batteries) have led to a revolution in portable power for consumer devices and an explosion of electric mobility options. Moreover, the ability to couple efficient electrochemical storage solutions with intermittent renewable power sources (e.g. solar and wind) will have a significant impact on our attempts to decarbonize our energy supply chain and mitigate human impacts on Earth's climate and biodiversity. Beyond energy storage and conversion, electrochemical systems play an important role in a range of industrial chemical applications, as discussed in [Chapter 1](chapters/ch1-intro/ch1-content.md). 
 
 ## Improving Electrochemical Systems
 
@@ -41,4 +41,4 @@ This text is built using the [JupyterBook](http://jupyterbook.org) platform, whi
 
 
 ## Suggesting Improvements
-Finally, this text exists as a repository on [GitHub](https://github.com).  Any questions, concerns, or suggestions can be submitted by clicking the GitHub Issues button  {fab}`github` at the top of the page.
+Finally, this text exists as a repository on [GitHub](https://github.com).  Clicking the  {fab}`github` button at the top of the page will present an option to visit the code repository. The button also presents an `open issue` option, where you can submit any questions, concerns, or suggestions can be submitted to help improve this book for future readers.
