@@ -1,0 +1,500 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Chapter 1. Introduction to Electrochemistry &#8212; Modeling Electrochemical Systems</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Chapter 2. Electrochemical Devices and Systems" href="../ch2-devices-and-systems/ch2-content.html" />
+    <link rel="prev" title="Modeling Electrochemical Systems: Introduction" href="../../intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Modeling Electrochemical Systems</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Modeling Electrochemical Systems: Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 1. Introduction to Electrochemistry
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ch2-devices-and-systems/ch2-content.html">
+   Chapter 2. Electrochemical Devices and Systems
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ch4-charge-transfer/ch4-content.html">
+   Chapter 4: Charge Transfer Kinetics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../markdown-notebooks.html">
+   Notebooks with MyST Markdown
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/decaluwe/EchemSystemsEngingeering"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/decaluwe/EchemSystemsEngingeering/issues/new?title=Issue%20on%20page%20%2Fchapters/ch1-intro-to-electrochemistry/ch1-content.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/chapters/ch1-intro-to-electrochemistry/ch1-content.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electrochemical-reactions">
+   Electrochemical Reactions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electrodes-and-electrolytes">
+   Electrodes and Electrolytes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electrochemical-devices">
+   Electrochemical Devices
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Chapter 1. Introduction to Electrochemistry</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electrochemical-reactions">
+   Electrochemical Reactions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electrodes-and-electrolytes">
+   Electrodes and Electrolytes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electrochemical-devices">
+   Electrochemical Devices
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-1-introduction-to-electrochemistry">
+<h1>Chapter 1. Introduction to Electrochemistry<a class="headerlink" href="#chapter-1-introduction-to-electrochemistry" title="Permalink to this headline">#</a></h1>
+<p>Electrochemistry is a branch of chemistry that deals with reactions that, in addition to transforming chemical bonds, transfer electrical charge between reactants and products.  Much of electrochemistry is concerned with changes that occur due to passage of electical current, and the resulting conversions between electrical and chemical energy. The field is commonly invoked with regard to energy storage and conversion, but electrochemical phenomena play significant roles in a broad array of applications, ranging from chemical production, chemical sensors, corrosion, and others <span id="id1">[<a class="reference internal" href="#id4" title="A.J. Bard, L.R. Faulkner, and H.S. White. Electrochemical Methods: Fundamentals and Applications. Wiley, 2022. ISBN 978-1-119-33406-4.">1</a>]</span> See <a class="reference internal" href="../ch2-devices-and-systems/ch2-content.html"><span class="doc std std-doc">Chapter 2</span></a> for a broader discussion of electrochemical systems and applications.</p>
+<p>Electrochemistry is a rich and complex field whose theory and practice spans more than a century.  A complete and thorough description of electrochemical theory is beyond the scope of this chapter. Rather, we aim to give an overview of the primary features of what makes an electrochemical reaction.  In subsequent chapters we will introduce concepts and theory as needed to model electrochemical phenomena. In order to cover a breadth of systems and phenomena, this presentation, at the moment, does not reflect the depth and complexity of electrochemical theory. In order to enable the engineering of electrochemical systems, we leave a full accounting of electrochemical science to the wealth of other wonderful texts which exist on the topic, and encourage the reader to avail themselves of these resources.<span id="id2">[<a class="reference internal" href="#id4" title="A.J. Bard, L.R. Faulkner, and H.S. White. Electrochemical Methods: Fundamentals and Applications. Wiley, 2022. ISBN 978-1-119-33406-4.">1</a>, <a class="reference internal" href="#id5" title="T.F. Fuller and J.N. Harb. Electrochemical Engineering. Wiley, 2018. ISBN 978-1-119-00425-7.">2</a>, <a class="reference internal" href="#id6" title="J. Newman and N.P. Balsara. Electrochemical Systems. The ECS Series of Texts and Monographs. Wiley, 2021. ISBN 978-1-119-51460-2.">3</a>]</span></p>
+<section id="electrochemical-reactions">
+<h2>Electrochemical Reactions<a class="headerlink" href="#electrochemical-reactions" title="Permalink to this headline">#</a></h2>
+<p>Electrochemical reactions, also called <em>charge transfer reactions</em>, take place at the interface between two materials (<em>phases</em>). As the name implies, the reaction is considered a charge transfer reaction (and hence an electrochemical reaction) if electrical charge is transferred from one phase to another.</p>
+<p>For example, consider the simple cartoon in <a class="reference internal" href="#charge-transfer-fig"><span class="std std-numref">Fig. 1</span></a>. In the illustration on the left, a lithium cation (charge = +1) associates with anions (or, more accurately, withy negatively-charged portions of the polar solvent molecules) in the electrolyte to form a charge-neutral complex. Similarly, the electrode begins in a charge-neutral state.</p>
+<p>The charge-transfer reaction moves the Li<span class="math notranslate nohighlight">\(^+\)</span> ion from the electrolyte into the electrode, transferring the positive charge to the electrode. The ion’s chemical energy has changed, from the solvation complex in the electrolyte to a new configuration (for example, intercalated into graphite) in the electrode, with an associated change in chemical potential energy. Similarly, the electric potential energy of the electric charge may have changed, depending on the electric potential of the electrolyte and electrode.</p>
+<figure class="align-default" id="charge-transfer-fig">
+<a class="reference internal image-reference" href="../../_images/charge-transfer.png"><img alt="../../_images/charge-transfer.png" src="../../_images/charge-transfer.png" style="width: 75%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Illustration of charge transfer at a phase boundary. On the left, a positively-charged lithium ion associates with a negatively-charged ion in the electrolyte to make a charge-neutral complex.  The electrochemical reaction moves the Li ion from the electrolyte to the electrode.  The reaction is influenced both by the chemical energy of the Li ion before and after the reaction and by the electric potential energy of the charge in each of the two phases.</span><a class="headerlink" href="#charge-transfer-fig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The charge transfer can be written thusly:</p>
+<div class="math notranslate nohighlight">
+\[ {\rm Li^+_{elyte} \leftrightharpoons Li^+_{ed}}\]</div>
+<p>where the subscripts <code class="docutils literal notranslate"><span class="pre">elyte</span></code> and <code class="docutils literal notranslate"><span class="pre">ed</span></code> represent the phases where the species is located (the electrolyte and the electrode, respectively).  Because the anion/solvent complex does not change phases (it begins and ends in the electrolyte), it does not <em>explicitly</em> need to be included in the reaction equation. However, it would not be <em>incorrect</em> to include it, and certain authors may indeed have compelling reasons to do so. In particular, if one considers that the solvent molecules are no longer part of a solvation complex after the reaction, and therefore exist in different chemical states before and after the reaction, one may rightly consider them to be different species.  While we delve into these details in later chapters, we have opted for the simpler presentation, in this introduction.</p>
+<p>The rate of the charge transfer reaction (in moles per second, for example), can be converted to an equivalent charge transfer current (in Amperes, or Coulombs per second).  The current internal to the cell which occurs due to a charge transfer reaction is often referred to as a <em>Faradaic current</em> <span class="math notranslate nohighlight">\(i_{\rm Far}\)</span>, and the conversion between reaction rate and the Faradaic current is known as <em>Faraday’s Law</em>:</p>
+<div class="math notranslate nohighlight">
+\[ i_{Far} = \frac{\dot{q}_{\rm rxn}}{nF}.\]</div>
+<p>Here <span class="math notranslate nohighlight">\(\dot{q}_{\rm rxn}\)</span> is the rate of progress of the reaction (mol s<span class="math notranslate nohighlight">\(^{-1}\)</span>), <span class="math notranslate nohighlight">\(n\)</span> is the number of elementary electrical charge units transferred to the electrode (moles of charge per mole of reaction), and <span class="math notranslate nohighlight">\(F\)</span> is <em>Faraday’s constant</em>, the number of Cuolombs contained in a mole of elementary charge units (<span class="math notranslate nohighlight">\(F\)</span> = 96485 C mol<span class="math notranslate nohighlight">\(^{-1}_{\rm charge}\)</span>).</p>
+<p><em>Notes on nomenclature and sign convention</em>:</p>
+<ul class="simple">
+<li><p>As you will no doubt find, sign conventions in electrochemistry are fairly arbitrary; there is no universal rule for what we mean, for instance, by “positive” current.  In this book, we will always take <em>positive current</em> to mean <em>positive charge delivered to the electrode</em>.  Note that Faraday’s Law is correct, regardless of this assumption.  If we switch our sign convention, the signs on <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(i_{\rm Far}\)</span> will both change, meaning that Faraday’s Law still holds.</p></li>
+<li><p>The variable <span class="math notranslate nohighlight">\(n\)</span> is sometimes referred to as the “number of electrons” transferred by the reaction (it is sometimes even written as <span class="math notranslate nohighlight">\(n_{\rm elec}\)</span>).  While this is perhaps more intuitive and easier to grasp (it is also more eloquent), we find that it is not sufficiently generalized.  In the reaction above, for example, no electrons are transferred, but electrical charge does indeed transfer from one phase to another. The phrase “number of electrons” is also inconsistent with our assumed sign convention, which concerns itself with the movement of positive charge.  For clarity, please note that “one unit of elementary charge” is equal and opposite to the charge of one electron.</p></li>
+</ul>
+<p>After the charge transfer reaction, in the illustration on the right, the electrolyte and electrode are no longer charge neutral, indicating that positive charge has been transferred from the electrolyte to the electrode. A point emphasized throughout this text is that the bulk interior or phasese strongly prefers to remain <em>charge neutral</em>. The positive charges in the phase are “balances” by an equal number of negative charges. If the bulk of a phase departs from this charge neutral state, large electrostatic forces (in the form of an electric field) will quickly develop.</p>
+<p>In this particlar case, there are two possible pathways to maintain charge neutrality:</p>
+<ul class="simple">
+<li><p>If there is a source of external current may deliver a electric charge in the form of electrons to compensate for the positive charge transferred to the electrode by the charge transfer reaction.</p></li>
+<li><p>If the charge  two charges would likely be strongly attracted to one another, forming a charged double layer at the electrode-electrolyte interface. If the double layer continues to build, an electric potential difference will grow at the phase interface, which will, in turn, impact the ability to transfer additional charge via charge transfer reactions.  These details are covered in detail in</p></li>
+</ul>
+<p>The ultimate impact of <span class="math notranslate nohighlight">\(i_{\rm Far}\)</span> in a device depends on the boundary conditions - how the device is operated. These details–calculating Faradaic currents, double layer currents and potentials, and external currents–are discussed in greater detail in the coming chapters (<a class="reference internal" href="../ch4-charge-transfer/ch4-content.html"><span class="doc std std-doc">Chapter 4</span></a>).</p>
+<p>Regardless of the specific details, at steady state know that the external current will equal the Faradaic current internal to the cell.  Any transient double layer currents will be resolved fairly quickly (&lt; 1 s), adjusting the electric potentials internal to the cell until <span class="math notranslate nohighlight">\(i_{\rm Far} = i_{\rm ext}\)</span>. For all practical purposes, then, the external current serves as a reliable measure of the Faradaic current and hence the reaction rate of the charge transfer reactions within the any electrochemical device. This has important pracitcal and technlogical implications, in that the external current can therefore be used to either <em>control</em> the charge transfer reaction rate (to produce desired chemical products at a known rate), or to <em>measure</em> the rection rate, which provides information about the chemicals present inside the device at any given time, such as in electrochemical sensors.  The thoery, equations, and rotines presented in this book will provide the reader with the tools to measure, design, and control devices for practical applications such as these.</p>
+</section>
+<section id="electrodes-and-electrolytes">
+<h2>Electrodes and Electrolytes<a class="headerlink" href="#electrodes-and-electrolytes" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="electrochemical-devices">
+<h2>Electrochemical Devices<a class="headerlink" href="#electrochemical-devices" title="Permalink to this headline">#</a></h2>
+<div class="docutils container" id="id3">
+<dl class="citation">
+<dt class="label" id="id4"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p>A.J. Bard, L.R. Faulkner, and H.S. White. <em>Electrochemical Methods: Fundamentals and Applications</em>. Wiley, 2022. ISBN 978-1-119-33406-4.</p>
+</dd>
+<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>T.F. Fuller and J.N. Harb. <em>Electrochemical Engineering</em>. Wiley, 2018. ISBN 978-1-119-00425-7.</p>
+</dd>
+<dt class="label" id="id6"><span class="brackets"><a class="fn-backref" href="#id2">3</a></span></dt>
+<dd><p>J. Newman and N.P. Balsara. <em>Electrochemical Systems</em>. The ECS Series of Texts and Monographs. Wiley, 2021. ISBN 978-1-119-51460-2.</p>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "decaluwe/EchemSystemsEngingeering",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters/ch1-intro-to-electrochemistry"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../../intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><strong><em>Modeling Electrochemical Systems:</em> Introduction</strong></p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../ch2-devices-and-systems/ch2-content.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 2. Electrochemical Devices and Systems</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Steven C. DeCaluwe<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
