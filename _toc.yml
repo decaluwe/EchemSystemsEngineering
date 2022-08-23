@@ -6,6 +6,7 @@ root: intro
 options:
   numbered: False
 chapters:
-- file: chapters/ch1-intro/ch1-content
-- file: notebooks
+- file: chapters/ch1-intro-to-electrochemistry/ch1-content
+- file: chapters/ch2-devices-and-systems/ch2-content
+- file: chapters/ch4-charge-transfer/ch4-content
 - file: markdown-notebooks
