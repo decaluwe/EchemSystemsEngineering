@@ -43,4 +43,4 @@ This text is built using the [JupyterBook](http://jupyterbook.org) platform, whi
 
 
 ## Suggesting Improvements
-Finally, this text exists as a repository on [GitHub](https://github.com).  Clicking the  {fab}`github` button at the top of the page will present an option to visit the code repository. The button also presents an `open issue` option, where any questions, concerns, or suggestions can be submitted to help improve this book for future readers.
+Finally, this text exists as a repository on [GitHub](https://github.com).  Clicking the  {fab}`github` button at the top of the page will present an option to visit the code repository. The button also presents an `open issue` option, where one can submit any questions, concerns, or suggestions to help improve this book for future readers.

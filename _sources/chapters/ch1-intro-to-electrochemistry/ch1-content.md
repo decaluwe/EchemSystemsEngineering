@@ -29,7 +29,7 @@ The rate of the charge transfer reaction (in moles per second, for example), can
 
 $$ i_{\rm Far} = \frac{\dot{q}_{\rm rxn}}{nF}.$$
 
-Here $\dot{q}_{\rm rxn}$ is the rate of progress of the reaction (mol s$^{-1}$), $n$ is the number of elementary electrical charge units transferred to the electrode (moles of charge per mole of reaction), and $F$ is _Faraday's constant_, the number of Cuolombs contained in a mole of elementary charge units ($F$ = 96485 C mol$^{-1}_{\rm charge}$).
+Here $\dot{q}_{\rm rxn}$ is the rate of progress of the reaction (mol s$^{-1}$), $n$ is the number of elementary electrical charge units transferred to the electrode (moles of charge per mole of reaction), and $F$ is _Faraday's constant_, the number of Cuolombs contained in a mole of elementary charge units ($F$ = 96485 C mol$~^{-1}_{\rm charge}$).
 
 _Notes on nomenclature and sign convention_: 
 - As you will no doubt find, sign conventions in electrochemistry are fairly arbitrary; there is no universal rule for what we mean, for instance, by "positive" current.  In this book, we will always take _positive current_ to mean _positive charge delivered to the electrode_.  Note that Faraday's Law is correct, regardless of this assumption.  If we switch our sign convention, the signs on $n$ and $i_{\rm Far}$ will both change, meaning that Faraday's Law still holds.
