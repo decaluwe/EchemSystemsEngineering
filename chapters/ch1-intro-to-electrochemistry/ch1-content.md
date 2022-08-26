@@ -11,7 +11,7 @@ For example, consider the simple cartoon in {numref}`charge-transfer-fig`. In th
 
 The charge-transfer reaction moves the Li$^+$ ion from the electrolyte into the electrode, transferring the positive charge to the electrode. The ion's chemical energy has changed, from the solvation complex in the electrolyte to a new configuration (for example, intercalated into graphite) in the electrode, with an associated change in chemical potential energy. Similarly, the potential energy of the electric charge may have changed, depending on the electric potential of the electrolyte and electrode.
 
-```{figure} charge-transfer.png
+```{figure} ../../images/charge-transfer.png
 :name: charge-transfer-fig
 :width: 75%
 

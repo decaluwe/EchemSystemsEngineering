@@ -1,0 +1,519 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Modeling Electrochemical Systems: Introduction &#8212; Modeling Electrochemical Systems</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Modeling Electrochemical Systems</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Modeling Electrochemical Systems: Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapters/ch1-intro-to-electrochemistry/ch1-content.html">
+   Chapter 1. Introduction to Electrochemistry
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapters/ch2-devices-and-systems/ch2-content.html">
+   Chapter 2. Electrochemical Devices and Systems
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapters/ch4-charge-transfer/ch4-content.html">
+   Chapter 4: Charge Transfer Kinetics
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/decaluwe/EchemSystemsEngingeering"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/decaluwe/EchemSystemsEngingeering/issues/new?title=Issue%20on%20page%20%2Fintro_old.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/intro_old.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals-and-scope">
+   Goals and Scope
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-electrochemistry-and-why-do-we-care">
+   What is Electrochemistry, and Why do We Care?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#improving-electrochemical-systems">
+   Improving Electrochemical Systems
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#numerical-modeling-and-simulation">
+   Numerical Modeling and Simulation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#beyond-model-development">
+   Beyond Model Development
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#software-and-this-text">
+   Software and this Text
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suggesting-improvements">
+   Suggesting Improvements
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Modeling Electrochemical Systems: Introduction</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals-and-scope">
+   Goals and Scope
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-electrochemistry-and-why-do-we-care">
+   What is Electrochemistry, and Why do We Care?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#improving-electrochemical-systems">
+   Improving Electrochemical Systems
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#numerical-modeling-and-simulation">
+   Numerical Modeling and Simulation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#beyond-model-development">
+   Beyond Model Development
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#software-and-this-text">
+   Software and this Text
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suggesting-improvements">
+   Suggesting Improvements
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="modeling-electrochemical-systems-introduction">
+<h1><strong><em>Modeling Electrochemical Systems:</em> Introduction</strong><a class="headerlink" href="#modeling-electrochemical-systems-introduction" title="Permalink to this headline">#</a></h1>
+<p>Steven C. DeCaluwe, Colorado School of Mines</p>
+<section id="goals-and-scope">
+<h2>Goals and Scope<a class="headerlink" href="#goals-and-scope" title="Permalink to this headline">#</a></h2>
+<p>Welcome! The purpose of this book is to give a general overview of electrochemical systems and how to model them. In this book, we will cover:</p>
+<ul class="simple">
+<li><p><strong>Basics of electrochemistry</strong>: electrochemical thermodynamics, kinetics, and transport,</p></li>
+<li><p><strong>Features of electrochemical systems</strong>: electrodes, electrolytes, and balance-of-plant,</p></li>
+<li><p><strong>Electrochemical system operation</strong>: use cases, operating modes,  how to evaluate performance, and</p></li>
+<li><p><strong>Electrochemical Modeling</strong>: Building and using software tools to model electrochemical systems.</p></li>
+</ul>
+</section>
+<section id="what-is-electrochemistry-and-why-do-we-care">
+<h2>What is Electrochemistry, and Why do We Care?<a class="headerlink" href="#what-is-electrochemistry-and-why-do-we-care" title="Permalink to this headline">#</a></h2>
+<p>Electrochemistry can be thought of as a subset of chemistry, where chemical reactions are accompanied by the movement of charge between reactants and products. If the charge moves from one phase to another phase, the total electric potential energy of the system changes, during the course of the reaction. This has three practical implications of interest to us:</p>
+<ol class="simple">
+<li><p>The potential energy of the various phases involved will influence the reaction rate, and can be varied to drive the reaction in one direction or another,</p></li>
+<li><p>The movement of charge results in an electrical current, which can be measured and therefore provides a measure of the reaction rate, and</p></li>
+<li><p>The reaction can be used to either store or release electrical energy.</p></li>
+</ol>
+<p>These three aspects of electrochemical reactions have led to the ubiquitous use of electrochemistry and electrochemical systems throughout society, for energy storage, conversion, and production, chemical processing, and sensors, among others. In recent years, advances in electrochemical systems (such as batteries) have led to a revolution in portable power for consumer devices and an explosion of electric mobility options. Moreover, the ability to couple efficient electrochemical storage solutions with intermittent renewable power sources (e.g. solar and wind) will have a significant impact on our attempts to decarbonize our energy supply chain and mitigate human impacts on Earth’s climate and biodiversity. Beyond energy storage and conversion, electrochemical systems play an important role in a range of industrial chemical applications, as discussed in <a class="reference internal" href="chapters/ch2-devices-and-systems/ch2-content.html"><span class="doc std std-doc">Chapter 2</span></a>.</p>
+<figure class="align-default" id="battery-charge-fig">
+<a class="reference internal image-reference" href="../../images/EV.png"><img alt="../../images/EV.png" src="../../images/EV.png" style="width: 75%;" /></a>
+<figcaption>
+<p><span class="caption-text">Advances in electrochemical devices and systems development have enabled portable power applications, such as plug-in electric vehicles. Photo by <a href="https://unsplash.com/@chuttersnap?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CHUTTERSNAP</a> on <a href="https://unsplash.com/s/photos/electric-car?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span><a class="headerlink" href="#battery-charge-fig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="improving-electrochemical-systems">
+<h2>Improving Electrochemical Systems<a class="headerlink" href="#improving-electrochemical-systems" title="Permalink to this headline">#</a></h2>
+<p>Improving electrochemical devices and systems is associated with a large array of benefits. These range from improved standards of living, abatement of anthropogenic climate effects and associated improvements in public health, and new classes of jobs and economic output, among others.  However, there are also numerous challenges that must also be managed, with risks that are associated with increasing use of electrochemical devices.  These include manging the extraction and supply chain for critical minerals (and associated social justice issues associated with potentially exploitative working conditions in mineral-rich regions of the world), device safety and durability, and new electrical infrastructure requirements. To leverage opportunities while mitigating risks, it is necessary that we develop a thorough and quantitative understanding electrochemical device operation. If we can understand and predict device performance for a variety of device designs, operating conditions, and applications, we can both develop improved devices and design electrochemical systems that build on their strengths.</p>
+<figure class="align-default" id="pev-sales">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Comparison_PEV_sales_China_Europe_USA_from_2014.png/512px-Comparison_PEV_sales_China_Europe_USA_from_2014.png"><img alt="Comparison PEV sales China Europe USA from 2014" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Comparison_PEV_sales_China_Europe_USA_from_2014.png/512px-Comparison_PEV_sales_China_Europe_USA_from_2014.png" style="width: 512px;" /></a>
+<figcaption>
+<p><span class="caption-text">Designing better and more durable electrochemical devices will be required to mitigate risks associated with extraction and supply chains for critical minerals required by increasing demand for these devices. <a href="https://commons.wikimedia.org/wiki/File:Comparison_PEV_sales_China_Europe_USA_from_2014.png">Mariordo (Mario Roberto Durán Ortiz)</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons.</span><a class="headerlink" href="#pev-sales" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="numerical-modeling-and-simulation">
+<h2>Numerical Modeling and Simulation<a class="headerlink" href="#numerical-modeling-and-simulation" title="Permalink to this headline">#</a></h2>
+<p>In this book, we use numerical simulations as a lens for understanding the performance of electrochemical systems. Performance is determined by a wide and interdiscplinary range of factors, including materials science, thermodynamics, chemical kinetics, fluid dynamics, and manufacturing. Numerical simulations provide us a framework in which we can describe these factors quantitatively, combining various phenomena so that we can predict the degree and ways in which each influences device and system performance.</p>
+<p>The book covers fundamental processes such as charge-transfer and chemical reactions, heat transfer, and species transport, describing equations to describe each process. These are then incorporated into the overall model via governing equations which describe the evolution of the <em>state</em> of the device, given the processes modeled and the <em>boundary conditions</em> of the device.</p>
+<p>At present, this book presents models within a <em>one-dimensional</em> <em>continuum</em> framework.  To be sure, the state of the art in electrochemical modeling can typically include multi-scale simulations that include both nanometer-scale and device-scale effects, and extends to two and three dimensions. However, we limit the scope here with the aim of improving clarity and providing a basic understanding of electrochemical principles. We feel that these intermediate-scale models can be easily extended to incorporate lower-level calculations, while also providing model outputs that can be coupled with system-level analysis. The book is not meant to be exhaustive–we refer to the great number of other wonderful texts on these topics, for readers interested in a deeper dive–but at the same time, it is not meant, necessarily, to be read cover-to-cover.  We aim to present significant depth on a range of topics relevant to electrochemical systems.  On any given topic, it is recommended that you read only to the level of depth that suits your current interests. Beyond the introductory material, the reader should be able to pick and choose individual chapters, as their interest, abilities, and needs dictate.</p>
+</section>
+<section id="beyond-model-development">
+<h2>Beyond Model Development<a class="headerlink" href="#beyond-model-development" title="Permalink to this headline">#</a></h2>
+<p>As you will soon see, building numerical simulation tools is about much more than writing code.  In addition to defining the model scope and deriving governing equations, it is helpful to understand how electrochemical systems are built, operated, and assessed.  In this text, we will also therefore cover electrochemical system design and fabrication, electrochemical device operation and testing, and the characterization tools used to understand the evolution of the materials, interfaces, and structures involved in an electrochemical device during its lifetime.</p>
+</section>
+<section id="software-and-this-text">
+<h2>Software and this Text<a class="headerlink" href="#software-and-this-text" title="Permalink to this headline">#</a></h2>
+<p>The models in this text are all developed using readily available, open-source <a class="reference external" href="http://python.org">Python</a>-based software tools.  We strive to give an introduction to some basic Python coding principles, tips and tricks, and approaches so that you can understand the code presented and build similar tools yourself.</p>
+<p>This text is built using the <a class="reference external" href="http://jupyterbook.org">JupyterBook</a> platform, which enables interactive code blocks intersperesed throughout the text.  For various examples, we will provide you with completed code blocks which you can execute/run <em>without having to leave this text</em> and view the output.  For other cases, we will provide you with <em>incomplete</em> code blocks, providing you and opportunity to write your own code in a supported manner, to gain practice and check your understanding. Wherever you see the <span class="fa fa-rocket"></span> present at the top of a page, press <span class="fa fa-rocket"></span>–&gt; <span class="guilabel">Live Code</span> to enable interactive code blocks.</p>
+</section>
+<section id="suggesting-improvements">
+<h2>Suggesting Improvements<a class="headerlink" href="#suggesting-improvements" title="Permalink to this headline">#</a></h2>
+<p>Finally, this text exists as a repository on <a class="reference external" href="https://github.com">GitHub</a>.  Clicking the  <span class="fab fa-github"></span> button at the top of the page will present an option to visit the code repository. The button also presents an <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">issue</span></code> option, where one can submit any questions, concerns, or suggestions to help improve this book for future readers.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "decaluwe/EchemSystemsEngingeering",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Steven C. DeCaluwe<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
