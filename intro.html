@@ -520,7 +520,21 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>For those new to coding, feel free to edit the string with your own message, and re-run the code block to see the altered message printed out. Each time a cell is executed, any variables created will be retained in the local memory and can be accessed in any code blocks subsequently run on that same page.  The <code class="docutils literal notranslate"><span class="pre">restart</span></code> button clears this memory so that you can start fresh, while the <code class="docutils literal notranslate"><span class="pre">restart</span> <span class="pre">&amp;</span> <span class="pre">run</span> <span class="pre">all</span></code> button clears out the local memory and runs all code blocks on that page, in the order that they appear.</p>
+<p>For those new to coding, feel free to edit the string with your own message, and re-run the code block to see the altered message printed out. Each time a cell is executed, any variables created will be retained in the local memory and can be accessed in any code blocks subsequently run on that same page. These are Jupyter Notebook code blocks. Holding variables in local memory is one of the nice features of Jupyter. Once a block is successfully executed, you do not need to run it again.  For lengthy data imports, for example, this can be quite a blessing!</p>
+<p>Note, however, that your calculations (or the person running them) can easily get “confused” if you run a code block multiple times or run them out of order. Say, for example, that block 1 defines a variable called <code class="docutils literal notranslate"><span class="pre">var</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<p>Block 2, meanwhile, implements an intermediate step that doubles the value of <code class="docutils literal notranslate"><span class="pre">var</span></code> :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">*=</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<p>And block 3 takes the square root:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">var</span><span class="o">**</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The intended value of <code class="docutils literal notranslate"><span class="pre">result</span></code> is clearly 2.  However, if the user, wittingly or otherwise, runs code block 2 twice in a row before executing code block 3, they would get <code class="docutils literal notranslate"><span class="pre">result</span> <span class="pre">=</span> <span class="pre">2.88</span></code>.  This is a relatively simple example, but is a common pitfall to Jupyter notebooks. See Joel Grus’s <a class="reference external" href="https://www.youtube.com/watch?v=7jiPeIFXb6U">humorous talk</a> on this, for more thoughts on the topic.</p>
+<p>The other two buttons provide some degree of remedy from this problem. The <code class="docutils literal notranslate"><span class="pre">restart</span></code> button clears the local memory so that you can start fresh, while the <code class="docutils literal notranslate"><span class="pre">restart</span> <span class="pre">&amp;</span> <span class="pre">run</span> <span class="pre">all</span></code> button clears out the local memory and runs all code blocks on that page, in the order that they appear.</p>
 </section>
 <section id="suggesting-improvements">
 <h2>Suggesting Improvements<a class="headerlink" href="#suggesting-improvements" title="Permalink to this headline">#</a></h2>
