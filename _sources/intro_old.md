@@ -33,7 +33,7 @@ Improving electrochemical devices and systems is associated with a large array o
 <img width="512" alt="Comparison PEV sales China Europe USA from 2014" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Comparison_PEV_sales_China_Europe_USA_from_2014.png/512px-Comparison_PEV_sales_China_Europe_USA_from_2014.png">
 
 
-Designing better and more durable electrochemical devices will be required to mitigate risks associated with extraction and supply chains for critical minerals required by increasing demand for these devices. <a href="https://commons.wikimedia.org/wiki/File:Comparison_PEV_sales_China_Europe_USA_from_2014.png">Mariordo (Mario Roberto Durán Ortiz)</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
+Designing better and more durable electrochemical devices will be required to mitigate risks associated with extraction and supply chains for critical minerals required by increasing demand for these devices. <a href="https://commons.wikimedia.org/wiki/File:Comparison_PEV_sales_China_Europe_USA_from_2014.png">Mariordo (Mario Roberto Durán Ortiz)</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons.
 :::
 ## Numerical Modeling and Simulation
 
@@ -49,7 +49,7 @@ As you will soon see, building numerical simulation tools is about much more tha
 
 ## Software and this Text 
 
-The models in this text are all developed using readily available, open-source [Python](http://python.org)-based software tools.  In all cases, we strive to give an introduction to some basic Python coding principles, tips and tricks, and approaches so that you can understand the code presented and build similar tools yourself.
+The models in this text are all developed using readily available, open-source [Python](http://python.org)-based software tools.  We strive to give an introduction to some basic Python coding principles, tips and tricks, and approaches so that you can understand the code presented and build similar tools yourself.
 
 This text is built using the [JupyterBook](http://jupyterbook.org) platform, which enables interactive code blocks intersperesed throughout the text.  For various examples, we will provide you with completed code blocks which you can execute/run _without having to leave this text_ and view the output.  For other cases, we will provide you with _incomplete_ code blocks, providing you and opportunity to write your own code in a supported manner, to gain practice and check your understanding. Wherever you see the {fa}`rocket` present at the top of a page, press {fa}`rocket`--> {guilabel}`Live Code` to enable interactive code blocks.
 

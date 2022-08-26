@@ -53,7 +53,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Chapter 1. Introduction to Electrochemistry" href="chapters/ch1-intro-to-electrochemistry/ch1-content.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -107,8 +106,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Modeling Electrochemical Systems: Introduction
                 </a>
             </li>
@@ -180,53 +179,6 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/decaluwe/EchemSystemsEngingeering/main?urlpath=tree/intro.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="initThebeSBT()"
-  class="headerbtn headerbtn-launch-thebe"
-  data-toggle="tooltip"
-data-placement="left"
-title="Launch Thebe"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-play"></i>
-  </span>
-<span class="headerbtn__text-container">Live Code</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -266,7 +218,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/decaluwe/EchemSystemsEngingeering/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/decaluwe/EchemSystemsEngingeering/issues/new?title=Issue%20on%20page%20%2Fintro_old.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -294,7 +246,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/intro.ipynb"
+        <a href="_sources/intro_old.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -305,7 +257,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.ipynb</span>
+<span class="headerbtn__text-container">.md</span>
 </a>
 
       </li>
@@ -477,7 +429,7 @@ title="Print to PDF"
 <figure class="align-default" id="battery-charge-fig">
 <a class="reference internal image-reference" href="../../images/EV.png"><img alt="../../images/EV.png" src="../../images/EV.png" style="width: 75%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Advances in electrochemical devices and systems development have enabled portable power applications, such as plug-in electric vehicles. Photo by <a href="https://unsplash.com/@chuttersnap?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CHUTTERSNAP</a> on <a href="https://unsplash.com/s/photos/electric-car?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span><a class="headerlink" href="#battery-charge-fig" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Advances in electrochemical devices and systems development have enabled portable power applications, such as plug-in electric vehicles. Photo by <a href="https://unsplash.com/@chuttersnap?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CHUTTERSNAP</a> on <a href="https://unsplash.com/s/photos/electric-car?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span><a class="headerlink" href="#battery-charge-fig" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -487,7 +439,7 @@ title="Print to PDF"
 <figure class="align-default" id="pev-sales">
 <a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Comparison_PEV_sales_China_Europe_USA_from_2014.png/512px-Comparison_PEV_sales_China_Europe_USA_from_2014.png"><img alt="Comparison PEV sales China Europe USA from 2014" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Comparison_PEV_sales_China_Europe_USA_from_2014.png/512px-Comparison_PEV_sales_China_Europe_USA_from_2014.png" style="width: 512px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Designing better and more durable electrochemical devices will be required to mitigate risks associated with extraction and supply chains for critical minerals required by increasing demand for these devices. <a href="https://commons.wikimedia.org/wiki/File:Comparison_PEV_sales_China_Europe_USA_from_2014.png">Mariordo (Mario Roberto Durán Ortiz)</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons.</span><a class="headerlink" href="#pev-sales" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Designing better and more durable electrochemical devices will be required to mitigate risks associated with extraction and supply chains for critical minerals required by increasing demand for these devices. <a href="https://commons.wikimedia.org/wiki/File:Comparison_PEV_sales_China_Europe_USA_from_2014.png">Mariordo (Mario Roberto Durán Ortiz)</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons.</span><a class="headerlink" href="#pev-sales" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -505,29 +457,11 @@ title="Print to PDF"
 <h2>Software and this Text<a class="headerlink" href="#software-and-this-text" title="Permalink to this headline">#</a></h2>
 <p>The models in this text are all developed using readily available, open-source <a class="reference external" href="http://python.org">Python</a>-based software tools.  We strive to give an introduction to some basic Python coding principles, tips and tricks, and approaches so that you can understand the code presented and build similar tools yourself.</p>
 <p>This text is built using the <a class="reference external" href="http://jupyterbook.org">JupyterBook</a> platform, which enables interactive code blocks intersperesed throughout the text.  For various examples, we will provide you with completed code blocks which you can execute/run <em>without having to leave this text</em> and view the output.  For other cases, we will provide you with <em>incomplete</em> code blocks, providing you and opportunity to write your own code in a supported manner, to gain practice and check your understanding. Wherever you see the <span class="fa fa-rocket"></span> present at the top of a page, press <span class="fa fa-rocket"></span>–&gt; <span class="guilabel">Live Code</span> to enable interactive code blocks.</p>
-<p>Try it out, below! After clicking <span class="guilabel">Live Code</span>, you will see three buttons appear:</p>
-<p><img alt="buttons" src="_images/CodeButtons.png" /></p>
-<p>Click on <code class="docutils literal notranslate"><span class="pre">run</span></code> to run the code block.  The first time you execute code, it will take some time to set up the links to the server where the code is actually run (up to a minute or more).  Do not be alarmed. All subequent code blocks will run much faster, after the initial set up.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a string.&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This is a string.
-</pre></div>
-</div>
-</div>
-</div>
-<p>For those new to coding, feel free to edit the string with your own message, and re-run the code block to see the altered message printed out. Each time a cell is executed, any variables created will be retained in the local memory and can be accessed in any code blocks subsequently run on that same page.  The <code class="docutils literal notranslate"><span class="pre">restart</span></code> button clears this memory so that you can start fresh, while the <code class="docutils literal notranslate"><span class="pre">restart</span> <span class="pre">&amp;</span> <span class="pre">run</span> <span class="pre">all</span></code> button clears out the local memory and runs all code blocks on that page, in the order that they appear.</p>
 </section>
 <section id="suggesting-improvements">
 <h2>Suggesting Improvements<a class="headerlink" href="#suggesting-improvements" title="Permalink to this headline">#</a></h2>
 <p>Finally, this text exists as a repository on <a class="reference external" href="https://github.com">GitHub</a>.  Clicking the  <span class="fab fa-github"></span> button at the top of the page will present an option to visit the code repository. The button also presents an <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">issue</span></code> option, where one can submit any questions, concerns, or suggestions to help improve this book for future readers.</p>
 </section>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -557,13 +491,6 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="chapters/ch1-intro-to-electrochemistry/ch1-content.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Chapter 1. Introduction to Electrochemistry</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>
